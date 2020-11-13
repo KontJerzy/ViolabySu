@@ -445,12 +445,8 @@ footer h1 {
   html {
     font-size: 20%;
   }
-  nav #logo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  nav ul {
+  nav {
+    overflow: hidden;
     -webkit-box-flex: calc(1/4);
         -ms-flex: calc(1/4);
             flex: calc(1/4);
@@ -462,6 +458,11 @@ footer h1 {
         -ms-flex-align: center;
             align-items: center;
     margin: auto;
+  }
+  nav #logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   nav ul li {
     font-size: 1rem;

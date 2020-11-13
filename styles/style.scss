@@ -149,16 +149,18 @@ $phone: 480px;
     
         }
         nav{
+            overflow: hidden;
+            flex: calc(1/4);
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
             #logo{
                 flex: 1;
                 
             }
             ul{
-                flex: calc(1/4);
-                display: inline-block;
-                justify-content: center;
-                align-items: center;
-                margin: auto;
+                
                 li{
                     font-size: 1rem;
                 }
