@@ -21,6 +21,9 @@ nav{
         justify-content: space-between;
         flex: 2;
         list-style: none;
+        li{
+            margin-left: 3rem;
+        }
     }
     #logo{
         flex: 3; /* This part arranges the space in between the ul as ratio 

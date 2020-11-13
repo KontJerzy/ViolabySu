@@ -44,7 +44,40 @@ a{
 @import "footer";
 @import "videoarrange";
 
-@media screen and (max-width: 1200px){
+$ktrouble: 1600px; 
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+/*
+@media screen and (min-width: $desktop) and (max-width: $ktrouble){
+    .showcase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: calc(1/2);
+        video{
+            flex-direction: column;
+            z-index: 1;
+            height: 200px;
+            margin-bottom: 10%;
+        }
+        img{
+            object-fit: contain;
+            text-align: center;
+            z-index: 0;
+            width: 1200px;
+            margin-bottom: 20%;
+            
+        }
+        
+    }
+    
+}
+*/
+
+@media screen and (min-width: $phone) and (max-width: $ktrouble){
     html{
         font-size: 50%;
 
@@ -60,21 +93,44 @@ a{
         }
     }
     .showcase{
-        grid-template-columns: 10% 1fr 10%;
+        grid-template-columns: 1fr;
         img{
             width: 100%;
             object-fit: contain;
+            margin-bottom: 15%;
+            @media screen and (min-width: $tablet) and (max-width: $laptop){
+                margin-bottom: 35%;
+            }
+            @media screen and (max-width: $tablet){
+                margin-bottom: 30%;
+            }
         }
-        img,h2,.info{
-            grid-column: 2/3;
-            text-align: center;
-        }
+
         video{
             flex-direction: column;
+            float: left;
+            z-index: 1;
+            height: 200px;
+            margin-bottom: 10%;
+            @media screen and (min-width: $tablet) and (max-width: $laptop){
+                height: 150px;
+            }
+            @media screen and (max-width: $tablet){
+                height: 120px;
+                float: right;
+                justify-content: right;
+            }
         }
     }
     .features{
         align-items: center;
+        margin-top: -20%;
+        @media screen and (min-width: $tablet) and (max-width: $laptop){
+            margin-top: -30%;
+        }
+        @media screen and (max-width: $tablet){
+            margin-top: -60%;
+        }
         h2{
             margin-top: 5rem;
         }
@@ -87,7 +143,7 @@ a{
         }
     }
 
-    @media screen and (max-width: 650px){
+    @media screen and (min-width: $phone) and (max-width: $tablet){
         video{
             float: left;
             display: block;
@@ -97,7 +153,9 @@ a{
         }
     }
 
+    @media screen and (max-width: $phone){
 
+    }
 
 
 

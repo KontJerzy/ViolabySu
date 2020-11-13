@@ -89,6 +89,10 @@ nav ul {
   list-style: none;
 }
 
+nav ul li {
+  margin-left: 3rem;
+}
+
 nav #logo {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -276,8 +280,8 @@ footer h1 {
 }
 
 .videoarrange {
-  background: -webkit-gradient(linear, left top, right top, from(#3b0d32), color-stop(#300228), to(#8a1a45));
-  background: linear-gradient(to right, #3b0d32, #300228, #8a1a45);
+  background: -webkit-gradient(linear, left top, right top, from(#41062d), color-stop(#3b0d32), color-stop(#410f30), color-stop(#300228), color-stop(#460f32), to(#34062d));
+  background: linear-gradient(to right, #41062d, #3b0d32, #410f30, #300228, #460f32, #34062d);
   position: relative;
   padding: 12vw 0;
   display: -webkit-box;
@@ -309,7 +313,33 @@ footer h1 {
   max-height: 100%;
 }
 
-@media screen and (max-width: 1200px) {
+/*
+@media screen and (min-width: $desktop) and (max-width: $ktrouble){
+    .showcase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: calc(1/2);
+        video{
+            flex-direction: column;
+            z-index: 1;
+            height: 200px;
+            margin-bottom: 10%;
+        }
+        img{
+            object-fit: contain;
+            text-align: center;
+            z-index: 0;
+            width: 1200px;
+            margin-bottom: 20%;
+            
+        }
+        
+    }
+    
+}
+*/
+@media screen and (min-width: 480px) and (max-width: 1600px) {
   html {
     font-size: 50%;
   }
@@ -322,31 +352,80 @@ footer h1 {
     margin-left: 5rem;
   }
   .showcase {
-    -ms-grid-columns: 10% 1fr 10%;
-        grid-template-columns: 10% 1fr 10%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .showcase img {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+    margin-bottom: 15%;
   }
-  .showcase img, .showcase h2, .showcase .info {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    text-align: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
+  .showcase img {
+    margin-bottom: 35%;
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 768px) {
+  .showcase img {
+    margin-bottom: 30%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) {
   .showcase video {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    float: left;
+    z-index: 1;
+    height: 200px;
+    margin-bottom: 10%;
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
+  .showcase video {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 768px) {
+  .showcase video {
+    height: 120px;
+    float: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) {
   .features {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: -20%;
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
+  .features {
+    margin-top: -30%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 768px) {
+  .features {
+    margin-top: -60%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1600px) {
   .features h2 {
     margin-top: 5rem;
   }
@@ -362,7 +441,7 @@ footer h1 {
   }
 }
 
-@media screen and (max-width: 1200px) and (max-width: 650px) {
+@media screen and (min-width: 480px) and (max-width: 1600px) and (min-width: 480px) and (max-width: 768px) {
   video {
     float: left;
     display: block;
@@ -376,7 +455,7 @@ footer h1 {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1600px) {
   /*
     .soon{
         overflow: hidden;
