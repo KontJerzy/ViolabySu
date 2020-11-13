@@ -143,7 +143,7 @@ $phone: 480px;
         }
     }
 
-    @media screen and (min-width: $phone) and (max-width: $tablet){
+    @media screen and (max-width: $phone){
         video{
             float: left;
             display: block;
@@ -154,7 +154,54 @@ $phone: 480px;
     }
 
     @media screen and (max-width: $phone){
-
+        html{
+            font-size: 30%;
+    
+        }
+        nav{
+            #logo{
+                flex: 1;
+            }
+            ul{
+                li{
+                    margin-left: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .showcase{
+            grid-template-columns: 1fr;
+            img{
+                width: 100%;
+                object-fit: contain;
+                margin-bottom: 40%;
+            }            
+    
+            video{
+                flex-direction: column;
+                float: left;
+                z-index: 1;
+                height: 100px;
+                margin-bottom: 10%;
+                float: right;
+                justify-content: right;
+            }
+        }
+        .features{
+            align-items: center;
+            margin-top: -80%;
+            
+            h2{
+                margin-top: 1rem;
+            }
+            .cards{
+                flex-direction: column;
+                width: 70%;
+                .card{
+                    margin: 1rem 0rem;
+                }
+            }
+        }
     }
 
 
