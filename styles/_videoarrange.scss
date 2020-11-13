@@ -1,0 +1,22 @@
+.videoarrange{
+    background: linear-gradient( to right,  rgb(59, 13, 50), #300228, #8a1a45);
+    position: relative;
+    padding: 12vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .babyvideo{
+        position: absolute;
+        left: 10%;
+        top: 43%;
+        transform: translateY(-48%);
+        width: 25%;
+        height: 24vw;
+        .prllx{
+            overflow: hidden;
+        }
+        video{
+            max-height: 100%;
+        }
+    }
+}
