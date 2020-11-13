@@ -144,16 +144,6 @@ $phone: 480px;
     }
 
     @media screen and (max-width: $phone){
-        video{
-            float: left;
-            display: block;
-            width: 80%;
-            justify-content: space-around;
-            flex-direction: column;
-        }
-    }
-
-    @media screen and (max-width: $phone){
         html{
             font-size: 30%;
     

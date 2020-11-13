@@ -442,20 +442,6 @@ footer h1 {
 }
 
 @media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 480px) {
-  video {
-    float: left;
-    display: block;
-    width: 80%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 480px) {
   html {
     font-size: 30%;
   }
