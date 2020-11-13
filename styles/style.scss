@@ -77,18 +77,32 @@ $phone: 480px;
 }
 */
 
-@media screen and (min-width: $phone) and (max-width: $ktrouble){
+@media screen and (max-width: $ktrouble){
     html{
         font-size: 50%;
+        @media screen and (max-width: $phone){
+            font-size: 20%;
+        }
 
     }
     nav{
+        @media screen and (max-width: $phone){
+            overflow: hidden;
+            flex: calc(1/4);
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
         #logo{
             flex: 1;
         }
         ul{
             li{
                 margin-left: 5rem;
+                @media screen and (max-width: $phone){
+                    margin: 0;
+                }
             }
         }
     }
@@ -104,6 +118,9 @@ $phone: 480px;
             @media screen and (max-width: $tablet){
                 margin-bottom: 30%;
             }
+            @media screen and (max-width: $phone){
+                margin-bottom: 20%;
+            }
         }
 
         video{
@@ -117,6 +134,11 @@ $phone: 480px;
             }
             @media screen and (max-width: $tablet){
                 height: 120px;
+                float: right;
+                justify-content: right;
+            }
+            @media screen and (max-width: $phone){
+                height: 100px;
                 float: right;
                 justify-content: right;
             }
@@ -137,12 +159,24 @@ $phone: 480px;
         .cards{
             flex-direction: column;
             width: 100%;
+            @media screen and (max-width: $phone){
+                flex-direction: column;
+                width: 70%;
+                flex: calc(1/4);
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+            }
             .card{
                 margin: 5rem 0rem;
+                @media screen and (max-width: $phone){
+                    margin: 0;
+                }
             }
         }
     }
 
+    /*
     @media screen and (max-width: $phone){
         html{
             font-size: 20%;
@@ -206,7 +240,7 @@ $phone: 480px;
         }
     }
 
-
+*/
 
 
     /*

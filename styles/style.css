@@ -339,112 +339,19 @@ footer h1 {
     
 }
 */
-@media screen and (min-width: 480px) and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
   html {
     font-size: 50%;
   }
-  nav #logo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  nav ul li {
-    margin-left: 5rem;
-  }
-  .showcase {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .showcase img {
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin-bottom: 15%;
-  }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
-  .showcase img {
-    margin-bottom: 35%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 768px) {
-  .showcase img {
-    margin-bottom: 30%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) {
-  .showcase video {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    float: left;
-    z-index: 1;
-    height: 200px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
-  .showcase video {
-    height: 150px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 768px) {
-  .showcase video {
-    height: 120px;
-    float: right;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) {
-  .features {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: -20%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
-  .features {
-    margin-top: -30%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 768px) {
-  .features {
-    margin-top: -60%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) {
-  .features h2 {
-    margin-top: 5rem;
-  }
-  .features .cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  .features .cards .card {
-    margin: 5rem 0rem;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1600px) and (max-width: 480px) {
+@media screen and (max-width: 1600px) and (max-width: 480px) {
   html {
     font-size: 20%;
   }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 480px) {
   nav {
     overflow: hidden;
     -webkit-box-flex: calc(1/4);
@@ -459,14 +366,26 @@ footer h1 {
             align-items: center;
     margin: auto;
   }
+}
+
+@media screen and (max-width: 1600px) {
   nav #logo {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
   nav ul li {
-    font-size: 1rem;
+    margin-left: 5rem;
   }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 480px) {
+  nav ul li {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1600px) {
   .showcase {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -475,8 +394,29 @@ footer h1 {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-bottom: 40%;
+    margin-bottom: 15%;
   }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
+  .showcase img {
+    margin-bottom: 35%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 768px) {
+  .showcase img {
+    margin-bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 480px) {
+  .showcase img {
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
   .showcase video {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -484,22 +424,72 @@ footer h1 {
             flex-direction: column;
     float: left;
     z-index: 1;
-    height: 100px;
+    height: 200px;
     margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
+  .showcase video {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 768px) {
+  .showcase video {
+    height: 120px;
     float: right;
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
   }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 480px) {
+  .showcase video {
+    height: 100px;
+    float: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+}
+
+@media screen and (max-width: 1600px) {
   .features {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: -80%;
+    margin-top: -20%;
   }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
+  .features {
+    margin-top: -30%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 768px) {
+  .features {
+    margin-top: -60%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
   .features h2 {
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
+  .features .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 480px) {
   .features .cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -517,12 +507,86 @@ footer h1 {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+@media screen and (max-width: 1600px) {
   .features .cards .card {
-    margin: 1rem 0rem;
+    margin: 5rem 0rem;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1600px) {
+@media screen and (max-width: 1600px) and (max-width: 480px) {
+  .features .cards .card {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  /*
+    @media screen and (max-width: $phone){
+        html{
+            font-size: 20%;
+    
+        }
+        nav{
+            overflow: hidden;
+            flex: calc(1/4);
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            #logo{
+                flex: 1;
+                
+            }
+            ul{
+                
+                li{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .showcase{
+            grid-template-columns: 1fr;
+            img{
+                width: 100%;
+                object-fit: contain;
+                margin-bottom: 40%;
+            }            
+    
+            video{
+                flex-direction: column;
+                float: left;
+                z-index: 1;
+                height: 100px;
+                margin-bottom: 10%;
+                float: right;
+                justify-content: right;
+            }
+        }
+        .features{
+            align-items: center;
+            margin-top: -80%;
+            
+            
+            h2{
+                margin-top: 1rem;
+            }
+            .cards{
+                flex-direction: column;
+                width: 70%;
+                flex: calc(1/4);
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+                .card{
+                    margin: 1rem 0rem;
+                }
+            }
+        }
+    }
+
+*/
   /*
     .soon{
         overflow: hidden;
