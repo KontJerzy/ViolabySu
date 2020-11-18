@@ -1,9 +1,17 @@
 .home{
-    background: linear-gradient( rgb(57, 12, 48), #300228, #8a1a45);
+    background-image: url(/img/dogy_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 .nav-container{
-    background: #280230;
-    position: sticky;
+    background-image: url(/img/navigation2.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     top: 0;
     z-index: 2;
 }
@@ -82,7 +90,7 @@ nav{
         object-fit: cover;
         align-self: center;
         overflow: hidden;
-        top: 0;
+        top: 0%;
     }
     
     

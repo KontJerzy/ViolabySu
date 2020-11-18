@@ -48,14 +48,22 @@ a {
 }
 
 .home {
-  background: -webkit-gradient(linear, left top, left bottom, from(#390c30), color-stop(#300228), to(#8a1a45));
-  background: linear-gradient(#390c30, #300228, #8a1a45);
+  background-image: url(/img/dogy_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .nav-container {
-  background: #280230;
-  position: -webkit-sticky;
-  position: sticky;
+  background-image: url(/img/navigation2.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   top: 0;
   z-index: 2;
 }
@@ -173,11 +181,17 @@ nav .logostylish img {
       -ms-grid-row-align: center;
       align-self: center;
   overflow: hidden;
-  top: 0;
+  top: 0%;
 }
 
 .features-container {
-  background: #8a1a45;
+  background-image: url(/img/dogy_background.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
   z-index: 0;
   /*over-flow: hidden; */
@@ -280,29 +294,34 @@ footer h1 {
 }
 
 .videoarrange {
-  background: -webkit-gradient(linear, left top, right top, from(#41062d), color-stop(#3b0d32), color-stop(#410f30), color-stop(#300228), color-stop(#460f32), to(#34062d));
-  background: linear-gradient(to right, #41062d, #3b0d32, #410f30, #300228, #460f32, #34062d);
-  position: relative;
-  padding: 12vw 0;
+  background-image: url(/img/dogy_background.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 12vw 0;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 .videoarrange .babyvideo {
-  position: absolute;
-  left: 10%;
-  top: 43%;
-  -webkit-transform: translateY(-48%);
-          transform: translateY(-48%);
-  width: 25%;
   height: 24vw;
+  display: -ms-grid;
+  display: grid;
+  /* creates the grid */
+  -ms-grid-columns: (max-content)[4];
+      grid-template-columns: repeat(4, -webkit-max-content);
+      grid-template-columns: repeat(4, max-content);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .videoarrange .babyvideo .prllx {
