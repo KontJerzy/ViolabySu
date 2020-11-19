@@ -461,9 +461,15 @@ footer h1 {
   }
 }
 
-@media screen and (max-width: 1600px) and (max-width: 480px) {
+@media screen and (max-width: 1600px) and (min-width: 350px) and (max-width: 480px) {
   .showcase img {
-    margin-top: -184%;
+    margin-bottom: 215%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 350px) {
+  .showcase img {
+    margin-bottom: 300%;
   }
 }
 
@@ -500,9 +506,15 @@ footer h1 {
   }
 }
 
-@media screen and (max-width: 1600px) and (max-width: 480px) {
+@media screen and (max-width: 1600px) and (min-width: 350px) and (max-width: 480px) {
   .features {
     margin-top: -190%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 350px) {
+  .features {
+    margin-top: -290%;
   }
 }
 
@@ -588,6 +600,12 @@ footer h1 {
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 350px) {
+  video {
+    margin-top: -30%;
   }
 }
 

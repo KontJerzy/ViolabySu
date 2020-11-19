@@ -49,6 +49,7 @@ $desktop: 1200px;
 $laptop: 1024px;
 $tablet: 768px;
 $phone: 480px;
+$miniphone:350px;
 
 /*
 @media screen and (min-width: $desktop) and (max-width: $ktrouble){
@@ -133,8 +134,11 @@ $phone: 480px;
             @media screen and (max-width: $tablet){
                 margin-bottom: 160%;
             }
-            @media screen and (max-width: $phone){
-                margin-top: -184%;
+            @media screen and (min-width: $miniphone) and (max-width: $phone){
+                margin-bottom: 215%;
+            }
+            @media screen and (max-width: $miniphone){
+                margin-bottom: 300%;
             }
         }
 
@@ -155,8 +159,11 @@ $phone: 480px;
         @media screen and (max-width: $tablet){
             margin-top: -120%;
         }
-        @media screen and (max-width: $phone){
+        @media screen and (min-width: $miniphone) and (max-width: $phone){
             margin-top: -190%;
+        }
+        @media screen and (max-width: $miniphone){
+            margin-top: -290%;
         }
         h2{
             margin-top: 5rem;
@@ -199,6 +206,9 @@ $phone: 480px;
             height: 100px;
             float: right;
             justify-content: right;
+        }
+        @media screen and (max-width: $miniphone){
+            margin-top: -30%;
         }
     }
 
