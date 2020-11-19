@@ -393,6 +393,26 @@ footer h1 {
         -ms-flex: 1;
             flex: 1;
   }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 480px) {
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    display: inline-block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1600px) {
   nav ul li {
     margin-left: 5rem;
   }
@@ -400,7 +420,7 @@ footer h1 {
 
 @media screen and (max-width: 1600px) and (max-width: 480px) {
   nav ul li {
-    margin: 0;
+    margin: 2rem;
   }
 }
 
@@ -417,60 +437,33 @@ footer h1 {
   }
 }
 
+@media screen and (max-width: 1600px) and (min-width: 1200px) and (max-width: 1600px) {
+  .showcase img {
+    margin-bottom: 27%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1024px) and (max-width: 1200px) {
+  .showcase img {
+    margin-bottom: 42%;
+  }
+}
+
 @media screen and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
   .showcase img {
-    margin-bottom: 35%;
+    margin-bottom: 79%;
   }
 }
 
 @media screen and (max-width: 1600px) and (max-width: 768px) {
   .showcase img {
-    margin-bottom: 30%;
+    margin-bottom: 160%;
   }
 }
 
 @media screen and (max-width: 1600px) and (max-width: 480px) {
   .showcase img {
-    margin-bottom: 20%;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .showcase video {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    float: left;
-    z-index: 1;
-    height: 200px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
-  .showcase video {
-    height: 150px;
-  }
-}
-
-@media screen and (max-width: 1600px) and (max-width: 768px) {
-  .showcase video {
-    height: 120px;
-    float: right;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-  }
-}
-
-@media screen and (max-width: 1600px) and (max-width: 480px) {
-  .showcase video {
-    height: 100px;
-    float: right;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    margin-top: -184%;
   }
 }
 
@@ -483,15 +476,33 @@ footer h1 {
   }
 }
 
+@media screen and (max-width: 1600px) and (min-width: 1200px) and (max-width: 1600px) {
+  .features {
+    margin-top: -20%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1024px) and (max-width: 1200px) {
+  .features {
+    margin-top: -40%;
+  }
+}
+
 @media screen and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
   .features {
-    margin-top: -30%;
+    margin-top: -70%;
   }
 }
 
 @media screen and (max-width: 1600px) and (max-width: 768px) {
   .features {
-    margin-top: -60%;
+    margin-top: -120%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 480px) {
+  .features {
+    margin-top: -190%;
   }
 }
 
@@ -538,6 +549,45 @@ footer h1 {
   .features .cards .card {
     margin-top: 2rem;
     margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  video {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    float: left;
+    z-index: 1;
+    height: 200px;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 768px) and (max-width: 1024px) {
+  video {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 768px) {
+  video {
+    height: 150px;
+    float: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+}
+
+@media screen and (max-width: 1600px) and (max-width: 480px) {
+  video {
+    height: 100px;
+    float: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
 }
 

@@ -77,6 +77,7 @@ $phone: 480px;
 }
 */
 
+
 @media screen and (max-width: $ktrouble){
     html{
         font-size: 50%;
@@ -98,10 +99,18 @@ $phone: 480px;
             flex: 1;
         }
         ul{
+            @media screen and (max-width: $phone){
+                flex-direction: column;
+                width: 100%;
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+            }
+            
             li{
                 margin-left: 5rem;
                 @media screen and (max-width: $phone){
-                    margin: 0;
+                    margin: 2rem;
                 }
             }
         }
@@ -112,46 +121,42 @@ $phone: 480px;
             width: 100%;
             object-fit: contain;
             margin-bottom: 15%;
+            @media screen and (min-width: $desktop) and (max-width: $ktrouble){
+                margin-bottom: 27%;
+            }
+            @media screen and (min-width: $laptop) and (max-width: $desktop){
+                margin-bottom: 42%;
+            }
             @media screen and (min-width: $tablet) and (max-width: $laptop){
-                margin-bottom: 35%;
+                margin-bottom: 79%;
             }
             @media screen and (max-width: $tablet){
-                margin-bottom: 30%;
+                margin-bottom: 160%;
             }
             @media screen and (max-width: $phone){
-                margin-bottom: 20%;
+                margin-top: -184%;
             }
         }
 
-        video{
-            flex-direction: column;
-            float: left;
-            z-index: 1;
-            height: 200px;
-            margin-bottom: 10%;
-            @media screen and (min-width: $tablet) and (max-width: $laptop){
-                height: 150px;
-            }
-            @media screen and (max-width: $tablet){
-                height: 120px;
-                float: right;
-                justify-content: right;
-            }
-            @media screen and (max-width: $phone){
-                height: 100px;
-                float: right;
-                justify-content: right;
-            }
-        }
+        
     }
     .features{
         align-items: center;
         margin-top: -20%;
+        @media screen and (min-width: $desktop) and (max-width: $ktrouble){
+            margin-top: -20%;
+        }
+        @media screen and (min-width: $laptop) and (max-width: $desktop){
+            margin-top: -40%;
+        }
         @media screen and (min-width: $tablet) and (max-width: $laptop){
-            margin-top: -30%;
+            margin-top: -70%;
         }
         @media screen and (max-width: $tablet){
-            margin-top: -60%;
+            margin-top: -120%;
+        }
+        @media screen and (max-width: $phone){
+            margin-top: -190%;
         }
         h2{
             margin-top: 5rem;
@@ -174,6 +179,26 @@ $phone: 480px;
                     margin-left: 2rem;
                 }
             }
+        }
+    }
+    video{
+        flex-direction: column;
+        float: left;
+        z-index: 1;
+        height: 200px;
+        margin-bottom: 10%;
+        @media screen and (min-width: $tablet) and (max-width: $laptop){
+            height: 200px;
+        }
+        @media screen and (max-width: $tablet){
+            height: 150px;
+            float: right;
+            justify-content: right;
+        }
+        @media screen and (max-width: $phone){
+            height: 100px;
+            float: right;
+            justify-content: right;
         }
     }
 
