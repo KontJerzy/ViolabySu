@@ -1,0 +1,28 @@
+.offer{
+    background: linear-gradient( to right,  rgb(59, 13, 50), #300228,#520445);
+    margin-top: 80px;
+    padding: 30px 0;
+    .small-container{
+        max-width: 1400px;
+        padding-left: 10px;
+        margin: auto;
+        padding-right: 10px;
+        
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .col-3{
+                flex-basis: 30%;
+                padding: 10px;
+                min-width: 400px;
+                margin-bottom: 10px;
+            }
+            video{
+                height: 20vh;
+            }
+    
+        }
+    }
+}

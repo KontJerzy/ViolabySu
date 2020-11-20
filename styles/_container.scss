@@ -1,0 +1,81 @@
+.container{
+    background-image: url(/img/violaMainPage_Edit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    .nav-container{
+        max-width: 1300px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            nav{
+                flex: 1;
+                text-align: right;
+                ul{
+                    display: inline-block;
+                    list-style-type: none;
+                    li{
+                        display: inline-block;
+                        margin-right: 5px;
+                        font-family: 'Modak', cursive;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .col-2{
+        flex-basis: 90%;
+        min-width: 300px;
+        color: rgb(20, 157, 199);
+        font-weight: 600;
+        img{
+            max-width: 100%;
+            padding: 50px;
+        }
+        h1{
+            font-size: 50px;
+            line-height: 70px;
+            margin: 20px 0;
+            font-family: 'Princess Sofia', cursive;
+        }
+        p{
+            color: rgb(32, 224, 238);
+            font-size: 20px;
+        }
+    }
+}
+.btn{
+    display: inline-block;
+    background: rgb(43, 144, 226);
+    color: white;
+    padding: 8px 30px;
+    margin: 20px 0;
+    border-radius: 30px;
+    font-size: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: turquoise;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(200, 19, 236);
+}
+p{
+    color: #555;
+}

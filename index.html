@@ -3,96 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap" 
-    rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css"/>
     <title>Viola by Su</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Princess+Sofia&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <main>
+    <div class="container">
         <div class="nav-container">
-            <nav>
-                <h1 id="logo">Viola</h1>
-                <div class="logostylish">
-                    <img src="./img/ViolaLogo.svg" alt="">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./img/ViolaLogo.svg" width="125px">
                 </div>
-                <ul>
-                    <li><a href="#features"> Yürüyüş</a></li>
-                    <li><a href="#features"> Giyim</a></li>
-                    <li><a href="#features"> Sezon</a></li>
-                    <li><a class="order" href="#soon"> Sipariş Ver</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <section class="videoarrange">
-            <div class="babyvideo prllx" data-prllx-d="50">
-                <video src="./img/ViolabysuDoggy_Edit.mp4" autoplay loop playsinline muted style="transform: translate3d(0px, 12px, 0px); opacity: 1; visibility: inherit;grid-column: 2/3;left: 10%;"></video>
-                <video src="./img/violabysuBaby_Edit.mp4" autoplay loop playsinline muted style="transform: translate3d(0px, 12px, 0px); opacity: 1; visibility: inherit;grid-column: 3/4;right: 10%;"></video>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Ürünler</a></li>
+                        <li><a href="">Hakkında</a></li>
+                        <li><a href="">İletişim</a></li>
+                        <li><a href="">Hesabınız</a></li>
+                    </ul>
+                </nav>
+                <img src="./img/debit-card.svg" width="30px" height="30px">
             </div>
-        </section>
-        
-        <section class="home">
-            <div class="showcase">
-                <!--<video src="./img/violaBaby.mp4" autoplay loop playsinline muted style="grid-row: 1/2; grid-column: 2/3; "></video>-->
-                <img src="./img/violaMainPage_Editt.png" alt="">
-            </div>
-        </section>
-
-        <div class="features-container">
-            <section class="features">
-                <h2>Favoriler</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img src="./img/baby1.jpg" alt="">
-                        <h4>Bir Çift Mutluluk</h4>
-                        <p>Şu tatlılığa bakar mısınız</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/baby2.jpg" alt="">
-                        <h4>Bebeğinize çok Yakışacak</h4>
-                        <p>Renk çok mu hoşunuza gitti</p>
-                    </div>
-                    <div class="card">
-                        <img src="./img/baby3.jpg" alt="">
-                        <h4>Uyum Her Yerdedir</h4>
-                        <p>Birlikte beğenin</p>
-                    </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workout <br/> a new Style</h1>
+                    <p>The default interactive shell is now zsh.
+                        <br/> please run `chsh -s /bin/zsh`.
+                        For more details, please visit.</p>
+                        <a href="" class="btn">Keşfetmeye Başla &#8594;</a>
                 </div>
-            </section>
-            <img class="wave" src="./img/backgroundfooter.jpg" alt="">
-        </div>    
-
-        
-       
-        <!--
-        <div class="info">
-            <h3>Sizce de minikler güzel bir dizaynı haketmiyorlar mı?</h3>
-            <p>Her ürünümüzü en iyi malzemelerle, <br/> 
-                yeni tasarımlarla ve detaylara aşırı özen göstererek üretiyoruz.<br/>
-                 Bizimle tanıştığına sevindin mi? Ne kadar sevindiğini göster</p>
+                <!--
+                <div class="col-2">
+                    <h2>Give Your Workout <br/> a new Style</h2>
+                </div>
+                -->
+            </div>
         </div>
-        <section class="soon">
-            <h2>Çok Yakında...</h2>
-            <img src="./img/ViolaLogo.svg" alt="">
-        </section>
-        -->
-        <footer>
-            <h1>Viola by Su</h1>
-            <ul>
-                <li>
-                    <a href="#"><img src="./img/youtubelogo.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/twitterlogo.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./img/instagramlogo.png" alt=""></a>
-                </li>
-            </ul>
-        </footer>
-    </main>
+    </div>
+    
+    <!--Featured Categories-->
+    
+    <div class="categories">
+        <div class="small-container">
+            <h1 class="title">Gündüzün Efendileri</h1>
+            <div class="row">
+                <div class="col-3">
+                    <img src="./img/dog1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="./img/dog2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="./img/dog3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Featured Products-->
+    <div class="small-container">
+        <h1 class="title">Öne Çıkan Ürünler</h1>
+        <div class="row">
+            <div class="col-4">
+                <img src="./img/baby1.jpg" alt="">
+                <h4>Turkuaz Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/baby4.jpg" alt="">
+                <h4>Pembe Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>60₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/baby5.jpg" alt="">
+                <h4>Pembe Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>70₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/baby6.jpg" alt="">
+                <h4>Turkuaz Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50₺</p>
+            </div>
+        </div>
+         <!--Latest Products-->
+        <h1 class="title">Yeni Ürünler</h1>
+        <div class="row">
+            <div class="col-4">
+                <img src="./img/dog4.jpg" alt="">
+                <h4>Turkuaz Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/dog5.jpg" alt="">
+                <h4>Pembe Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>60₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/dog6.jpg" alt="">
+                <h4>Pembe Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>70₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/dog7.jpg" alt="">
+                <h4>Turkuaz Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50₺</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="./img/dog8.jpg" alt="">
+                <h4>Turkuaz Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/baby2.jpg" alt="">
+                <h4>Pembe Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>60₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/baby3.jpg" alt="">
+                <h4>Pembe Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>70₺</p>
+            </div>
+            <div class="col-4">
+                <img src="./img/baby1.jpg" alt="">
+                <h4>Turkuaz Ayakkabı</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50₺</p>
+            </div>
+        </div>
+    </div>
+    <!--Offer-->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <video src="./img/ViolaDoggy.mp4" autoplay loop playsinline muted ></video>
+                </div>
+                <div class="col-3">
+                    <h1 class="title">Rüyalar Ülkesine Giriş</h1>
+                </div>
+                <div class="col-3">
+                    <video src="./img/violaBaby.mp4" autoplay loop playsinline muted ></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
