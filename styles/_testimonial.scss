@@ -1,0 +1,49 @@
+.testimonial{
+    padding-top: 100px;
+
+    .small-container{
+        max-width: 1500px;
+        padding-left: 10px;
+        margin: auto;
+        padding-right: 10px;
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .col-3{
+                text-align: center;
+                flex-basis: 30%;
+                padding: 40px 20px;
+                min-width: 400px;
+                margin-bottom: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+                cursor: pointer;
+                transition: transform 0.5s;
+                p{
+                    font-size: 16px;
+                    margin: 12px 0;
+                    color: rgb(219, 129, 219);
+                }
+                h3{
+                    font-weight: 600;
+                    color: rgb(44, 3, 44);
+                    font-size: 24px;
+                    margin-top: 10px;
+                }
+                img{
+                    width: 200px;
+                    margin-top: 20px;
+                    border-radius: 30%;
+                }
+            }
+            .col-3:hover{
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+.fa.fa-quote-left{
+    font-size: 30px;
+    color: rgb(235, 135, 222);
+}

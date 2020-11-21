@@ -7,6 +7,77 @@ body{
     font-family: 'Noto Serif', serif;
 }
 
+/* Media Query for Menu */
+
+@media only screen and (max-width: 800px){
+    .nav-container{
+        width: 100%;
+        .navbar{
+            overflow: none;
+            .empty{
+                flex: 1;
+            }
+            nav{
+                display: inline-block;
+                overflow: none;
+                display: none;
+                ul{
+                    position: absolute;
+                    background-color: #f9f9f93a;
+                    box-shadow: 0px 0.6rem 1rem 0px rgba(0,0,0,0.2);
+                    padding: 0.2rem 0.3rem;
+                    z-index: 1;
+                    text-align: left;
+                    width: 130px;
+                    li{
+                        display: block;
+                        padding: 0.7rem .8rem;
+                        font-size: 1rem;
+                        margin-right: 0.4rem;;
+                        a{
+                            float: none;
+                        }
+                    }
+                    li a:hover {
+                        background-color: rgba(235, 74, 195, 0.219);
+                      }
+                }
+                
+            }
+        }
+        .navbar:hover nav{
+            display: block;
+        }
+        
+        .btn{
+            padding: 0.4rem 3rem;
+            margin: 2rem 1rem;
+            border-radius: 30px;
+            font-size: 2rem;
+        }
+    }
+    .fa.fa-quote-left{
+        font-size: 30px;
+        color: rgb(235, 135, 222);
+    }
+    
+}
+
+
+@media only screen and (max-width: 433px){
+    .row{
+        text-align: center;
+    }
+    .container{
+        .navbar{
+            display: block;
+        }
+    }
+    
+}
+
+
+
 
 
 
@@ -14,3 +85,6 @@ body{
 @import "container";
 @import "categories";
 @import "offer";
+@import "testimonial";
+@import "participate";
+@import "footer";
